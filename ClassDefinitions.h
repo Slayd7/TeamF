@@ -13,3 +13,7 @@ class World;
 class Tile;
 
 class Item;
+
+class Command;
+
+class CommandsList;

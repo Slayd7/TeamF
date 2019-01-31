@@ -1,12 +1,16 @@
-#include<iostream>
 #include "ClassDefinitions.h"
+#include<map>
+#include<string>
 using namespace std;
 
-class World
+class CommandsList
 {
 private:
     // A reference to the base program; Through this we can access any class instances we need, like Output
     Program* referenceToProgram;
 public:
-    World(Program* program);
+    // The dictionary of all possible commands
+    map<string, Command> listOfCommands;
+
+    CommandsList(Program* program);
 }

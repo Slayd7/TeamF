@@ -1,6 +1,6 @@
 #include<string>
 #include "ClassDefinitions.h"
-#include <map>
+#include <vector>
 using namespace std;
 
 // The base class for any command
@@ -11,14 +11,7 @@ private:
     Program* referenceToProgram;
 
 public:
-    Command(Program* program)
-    {
-        // Establish our reference to the main program
-        referenceToProgram = program;
-    }
+    Command(Program* program);
 
-    virtual void Run(map<int, string> arguments)
-    {
-        
-    }
+    virtual void Run(vector<string> arguments) = 0;
 }

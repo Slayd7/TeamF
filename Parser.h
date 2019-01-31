@@ -1,4 +1,5 @@
 #include<string>
+#include<vector>
 #include "ClassDefinitions.h"
 using namespace std;
 
@@ -8,16 +9,12 @@ class Parser
 private:
     // A reference to the base program; Through this we can access any class instances we need, like Output
     Program* referenceToProgram;
+    
+    // Parses a string into a list
+    static vector<string> ParseString(string stringToParse);
 
 public:
-    Parser(Program* program)
-    {
-        // Establish our reference to the main program
-        referenceToProgram = program;
-    }
+    Parser(Program* program);
     // Parses the given string and calls the Run() function on the correct command class
-    void Parse(string stringToParse)
-    {
-        
-    }
+    void Parse(string stringToParse);
 }

@@ -8,9 +8,5 @@ private:
     // A reference to the base program; Through this we can access any class instances we need, like Output
     Program* referenceToProgram;
 public:
-    Item(Program* program)
-    {
-        // Establish our reference to the main program
-        referenceToProgram = program;
-    }
+    Item(Program* program);
 }
