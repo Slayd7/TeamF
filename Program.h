@@ -17,8 +17,8 @@ public:
     Program()
     {
         parser = new Parser(this);
-        input = new Input(this);
         output = new Output(this);
         world = new World(this);
+        input = new Input(this);
     }
 }

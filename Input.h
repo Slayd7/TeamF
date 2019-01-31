@@ -1,7 +1,7 @@
 #include<iostream>
 #include "ClassDefinitions.h"
 using namespace std;
-
+//a comment
 class Input
 {
 private:
